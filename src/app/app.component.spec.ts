@@ -16,10 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'IA-ABDEL'`, () => {
+  it(`should have as title 'ia-front-abdel'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('IA-ABDEL');
+    expect(app.title).toEqual('ia-front-abdel');
   });
 
   it('should render title', () => {
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'IA-ABDEL app is running!'
+      'ia-front-abdel app is running!'
     );
   });
 });

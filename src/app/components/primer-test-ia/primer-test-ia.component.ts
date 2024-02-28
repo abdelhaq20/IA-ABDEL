@@ -1,13 +1,15 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-primer-test-ia',
+  templateUrl: './primer-test-ia.component.html',
+  styleUrls: ['./primer-test-ia.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'ia-front-abdel';
+export class PrimerTestIaComponent {
+
+ // title = 'ia-front-abdel';
   mensajes: any[] = [];
   mensaje: string | undefined;
   cargando: boolean = false; 

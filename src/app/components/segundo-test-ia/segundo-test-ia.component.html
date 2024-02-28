@@ -1,0 +1,40 @@
+<!-- segundo-test-ia.component.html -->
+<div class="container mt-5">
+    <div class="row mb-3">
+        <div class="col-12">
+            <h2 class="text-center">Chat con ia-front-abdel [test-2]</h2>
+        </div>
+    </div>
+
+    <!-- Lista de mensajes -->
+    <div class="row">
+        <div class="col-12">
+            <ul class="list-unstyled">
+                <li *ngFor="let mensaje of mensajes"
+                    [ngClass]="{'text-right': mensaje.enviado, 'text-left': !mensaje.enviado}">
+                    <!-- Usamos <pre> para mantener el formato original de la respuesta -->
+                    <pre>{{ mensaje.texto }}</pre>
+                    <hr>
+                </li>
+                <!-- Mensaje de carga -->
+                <li *ngIf="cargando" class="text-center">
+                    Cargando respuesta...
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Campo de entrada de mensaje -->
+    <div class="row">
+        <div class="col">
+            <textarea class="form-control" rows="3" placeholder="Escribe un mensaje..."
+                [(ngModel)]="mensaje"></textarea>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <button class="btn btn-primary btn-block" type="button" (click)="enviarMensaje()">Enviar</button>
+        </div>
+    </div>
+
+</div>
