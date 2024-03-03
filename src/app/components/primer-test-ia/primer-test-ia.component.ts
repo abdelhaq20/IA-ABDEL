@@ -24,7 +24,7 @@ export class PrimerTestIaComponent {
       'https://ia-kong-dev.codingbuddy-4282826dce7d155229a320302e775459-0000.eu-de.containers.appdomain.cloud/api/llm/any-client';
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'X-API-KEY': 'VVVAAACCCIIIAAA',
+      'X-API-KEY': 'VVAACCIIAA',
     });
 
     //32rasdf3io2hod

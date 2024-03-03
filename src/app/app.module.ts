@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { PrimerTestIaComponent } from './components/primer-test-ia/primer-test-ia.component';
 import { SegundoTestIaComponent } from './components/segundo-test-ia/segundo-test-ia.component';
+import { ResumirTextoIaComponent } from './components/resumir-texto-ia/resumir-texto-ia.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SegundoTestIaComponent } from './components/segundo-test-ia/segundo-tes
     AppComponent,
     InicioComponent,
     PrimerTestIaComponent,
-    SegundoTestIaComponent
+    SegundoTestIaComponent,
+    ResumirTextoIaComponent
   ],
   imports: [
     BrowserModule,
